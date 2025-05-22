@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Community Illustration</title>
+    <defs>
+        <circle id="path-1" cx="100" cy="100" r="100"></circle>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFF8F0" offset="0%"></stop>
+            <stop stop-color="#F5F9FF" offset="100%"></stop>
+        </linearGradient>
+        <!-- Subtle wave pattern -->
+        <pattern id="wave-pattern" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path d="M0,100 C20,90 40,110 60,100 C80,90 100,110 120,100 C140,90 160,110 180,100 C200,90 220,110 240,100" 
+                  stroke="#E3F2FD" stroke-width="1" fill="none" />
+            <path d="M0,120 C20,110 40,130 60,120 C80,110 100,130 120,120 C140,110 160,130 180,120 C200,110 220,130 240,120" 
+                  stroke="#FFF3E0" stroke-width="1" fill="none" />
+        </pattern>
+    </defs>
+    <g id="Community-Illustration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background with subtle pattern -->
+        <g id="Background">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Circle" fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+            <rect fill="url(#wave-pattern)" mask="url(#mask-2)" width="200" height="200"></rect>
+        </g>
+        
+        <!-- Central Circle -->
+        <circle cx="100" cy="100" r="25" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2" />
+        <path d="M90,100 L110,100 M110,100 L103,93 M110,100 L103,107" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" />
+        <path d="M110,100 L90,100 M90,100 L97,93 M90,100 L97,107" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" />
+        
+        <!-- People around the circle -->
+        <!-- Person 1 (Top) -->
+        <g transform="translate(90, 40)">
+            <circle cx="10" cy="10" r="10" fill="#2196F3" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 2 (Right) -->
+        <g transform="translate(140, 90)">
+            <circle cx="10" cy="10" r="10" fill="#FF9800" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 3 (Bottom) -->
+        <g transform="translate(90, 140)">
+            <circle cx="10" cy="10" r="10" fill="#9C27B0" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 4 (Left) -->
+        <g transform="translate(40, 90)">
+            <circle cx="10" cy="10" r="10" fill="#4CAF50" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 5 (Top-Right) -->
+        <g transform="translate(130, 50)">
+            <circle cx="10" cy="10" r="10" fill="#F44336" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 6 (Bottom-Right) -->
+        <g transform="translate(130, 130)">
+            <circle cx="10" cy="10" r="10" fill="#009688" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 7 (Bottom-Left) -->
+        <g transform="translate(50, 130)">
+            <circle cx="10" cy="10" r="10" fill="#FFC107" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Person 8 (Top-Left) -->
+        <g transform="translate(50, 50)">
+            <circle cx="10" cy="10" r="10" fill="#3F51B5" opacity="0.8" />
+            <circle cx="10" cy="7" r="3" fill="#FFFFFF" />
+            <path d="M5,13 C5,11 7,10 10,10 C13,10 15,11 15,13" fill="#FFFFFF" />
+        </g>
+        
+        <!-- Connection Lines -->
+        <path d="M100,75 L100,65" stroke="#2196F3" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M125,100 L135,100" stroke="#FF9800" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M100,125 L100,135" stroke="#9C27B0" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M75,100 L65,100" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M118,82 L125,70" stroke="#F44336" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M118,118 L125,130" stroke="#009688" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M82,118 L70,130" stroke="#FFC107" stroke-width="1.5" stroke-dasharray="3,2" />
+        <path d="M82,82 L70,70" stroke="#3F51B5" stroke-width="1.5" stroke-dasharray="3,2" />
+    </g>
+</svg> 

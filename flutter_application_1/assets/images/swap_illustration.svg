@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Swap Illustration</title>
+    <defs>
+        <circle id="path-1" cx="100" cy="100" r="100"></circle>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFF8F0" offset="0%"></stop>
+            <stop stop-color="#F5F9FF" offset="100%"></stop>
+        </linearGradient>
+        <!-- Gradient for the first hand (blue) -->
+        <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2196F3" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#2196F3" stop-opacity="0.6"/>
+        </linearGradient>
+        <!-- Gradient for the second hand (orange) -->
+        <linearGradient id="orange-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF9800" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#FF9800" stop-opacity="0.6"/>
+        </linearGradient>
+        <!-- Subtle wave pattern -->
+        <pattern id="wave-pattern" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path d="M0,100 C20,90 40,110 60,100 C80,90 100,110 120,100 C140,90 160,110 180,100 C200,90 220,110 240,100" 
+                  stroke="#E3F2FD" stroke-width="1" fill="none" />
+            <path d="M0,120 C20,110 40,130 60,120 C80,110 100,130 120,120 C140,110 160,130 180,120 C200,110 220,130 240,120" 
+                  stroke="#FFF3E0" stroke-width="1" fill="none" />
+        </pattern>
+    </defs>
+    <g id="Swap-Illustration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background with subtle pattern -->
+        <g id="Background">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Circle" fill="url(#linearGradient-3)" xlink:href="#path-1"></use>
+            <rect fill="url(#wave-pattern)" mask="url(#mask-2)" width="200" height="200"></rect>
+        </g>
+        
+        <!-- Blue Hand (Left) -->
+        <g id="blue-hand" transform="translate(40, 80)">
+            <path d="M0,30 C5,25 10,20 15,20 C25,20 30,25 35,30 L50,30 C55,30 60,25 60,20 L60,10 C60,5 55,0 50,0 L10,0 C5,0 0,5 0,10 L0,30 Z" 
+                  fill="url(#blue-gradient)" />
+            <!-- Fingers -->
+            <path d="M0,30 C0,35 5,40 10,40 L15,40 C20,40 25,35 25,30 L0,30 Z" 
+                  fill="#1E88E5" />
+        </g>
+        
+        <!-- Orange Hand (Right) -->
+        <g id="orange-hand" transform="translate(100, 80)">
+            <path d="M60,30 C55,25 50,20 45,20 C35,20 30,25 25,30 L10,30 C5,30 0,25 0,20 L0,10 C0,5 5,0 10,0 L50,0 C55,0 60,5 60,10 L60,30 Z" 
+                  fill="url(#orange-gradient)" />
+            <!-- Fingers -->
+            <path d="M60,30 C60,35 55,40 50,40 L45,40 C40,40 35,35 35,30 L60,30 Z" 
+                  fill="#F57C00" />
+        </g>
+        
+        <!-- Book (in blue hand) -->
+        <g id="book" transform="translate(55, 85)">
+            <rect x="0" y="0" width="25" height="20" rx="2" fill="#FF9800" />
+            <rect x="2" y="2" width="21" height="16" rx="1" fill="#FFF3E0" />
+            <path d="M5,5 L19,5 M5,10 L15,10 M5,15 L12,15" stroke="#FF9800" stroke-width="1" />
+        </g>
+        
+        <!-- Smartphone (in orange hand) -->
+        <g id="smartphone" transform="translate(120, 85)">
+            <rect x="0" y="0" width="15" height="25" rx="2" fill="#2196F3" />
+            <rect x="2" y="2" width="11" height="18" rx="1" fill="#E3F2FD" />
+            <circle cx="7.5" cy="22" r="1" fill="#E3F2FD" />
+        </g>
+        
+        <!-- Swap Arrows -->
+        <g id="swap-arrows" transform="translate(85, 100)">
+            <circle cx="15" cy="0" r="15" fill="#FFFFFF" opacity="0.8" />
+            <path d="M5,-5 L15,0 L5,5" stroke="#2196F3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25,5 L15,0 L25,-5" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </g>
+</svg> 
